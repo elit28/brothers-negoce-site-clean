@@ -2,17 +2,18 @@
 <html lang="fr">
     <head>
         <meta charset="utf-8"/>
-        <title>Espace professionnel | Brothers Négoce</title>
-        <meta content="L'espace pro Brothers Négoce (tarifs pro, suivi de commandes, catalogue personnalisé, historique) arrive prochainement. Demandez dès maintenant votre accès professionnel." name="description"/>
-        <meta content="Espace professionnel | Brothers Négoce" property="og:title"/>
-        <meta content="L'espace pro Brothers Négoce (tarifs pro, suivi de commandes, catalogue personnalisé, historique) arrive prochainement. Demandez dès maintenant votre accès professionnel." property="og:description"/>
+        <title>Nos marques partenaires : LG, Ariston, Intuis, Airwell | Brothers Négoce</title>
+        <meta content="Brothers Négoce distribue les marques LG Electronics, Ariston, Intuis et Airwell : pompes à chaleur air/eau, air/air, ballons thermodynamiques et solutions CVC pour les professionnels RGE." name="description"/>
+        <meta content="Nos marques partenaires | Brothers Négoce" property="og:title"/>
+        <meta content="Brothers Négoce distribue les marques LG Electronics, Ariston, Intuis et Airwell : pompes à chaleur air/eau, air/air, ballons thermodynamiques et solutions CVC pour les professionnels RGE." property="og:description"/>
         <meta content="assets/img/gen_installateur-examining-professionnels-équipements-close-up_1.jpg" property="og:image"/>
-        <meta content="Espace professionnel | Brothers Négoce" name="twitter:title"/>
-        <meta content="L'espace pro Brothers Négoce (tarifs pro, suivi de commandes, catalogue personnalisé, historique) arrive prochainement. Demandez dès maintenant votre accès professionnel." name="twitter:description"/>
+        <meta content="Nos marques partenaires | Brothers Négoce" name="twitter:title"/>
+        <meta content="Brothers Négoce distribue les marques LG Electronics, Ariston, Intuis et Airwell : pompes à chaleur air/eau, air/air, ballons thermodynamiques et solutions CVC pour les professionnels RGE." name="twitter:description"/>
         <meta content="assets/img/gen_installateur-examining-professionnels-équipements-close-up_1.jpg" name="twitter:image"/>
         <meta property="og:type" content="website"/>
         <meta content="summary_large_image" name="twitter:card"/>
         <meta content="width=device-width, initial-scale=1" name="viewport"/>
+        <link href="marques.html" rel="canonical"/>
         <link href="assets/css/brothers-negoce.css?v=20260614f" rel="stylesheet" type="text/css"/>
         <style>
             .status-badge_wrap {
@@ -21,13 +22,45 @@
                 gap: 6px;
                 padding: 4px 12px;
                 border-radius: 100px;
-                background: rgba(36, 163, 177, 0.12);
-                color: #24a3b1;
+                background: rgba(10, 139, 142, 0.12);
+                color: #0A8B8E;
                 font-size: 12px;
                 font-weight: 600;
                 text-transform: uppercase;
                 letter-spacing: 0.04em;
                 margin-bottom: 12px;
+            }
+            .brand-submenu_wrap {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 12px;
+                margin-bottom: 8px;
+            }
+            .brand-submenu_link {
+                display: inline-flex;
+                align-items: center;
+                padding: 8px 18px;
+                border-radius: 100px;
+                border: 1px solid rgba(10, 139, 142, 0.3);
+                color: #063E45;
+                font-size: 14px;
+                font-weight: 600;
+                text-decoration: none;
+                transition: background 0.2s ease, color 0.2s ease;
+            }
+            .brand-submenu_link:hover {
+                background: #0A8B8E;
+                color: #fff;
+            }
+            .brand_card {
+                border: 1px solid rgba(10, 139, 142, 0.16);
+                border-radius: 16px;
+                padding: 32px;
+                margin-bottom: 24px;
+                scroll-margin-top: 120px;
+            }
+            .brand_card-name {
+                margin-bottom: 8px;
             }
         </style>
         <link href="https://fonts.googleapis.com" rel="preconnect"/>
@@ -53,6 +86,19 @@
         <!-- SGAP cdn -->
         <script src="assets/js/gsap.min.js"></script>
         <script src="assets/js/ScrollTrigger.min.js"></script>
+        <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "ItemList",
+            "name": "Marques partenaires Brothers Négoce",
+            "itemListElement": [
+                {"@type": "Brand", "position": 1, "name": "LG Electronics France", "url": "https://www.lg.com/fr/"},
+                {"@type": "Brand", "position": 2, "name": "Ariston", "url": "https://www.ariston.com/fr-fr/"},
+                {"@type": "Brand", "position": 3, "name": "Intuis", "url": "https://intuis.fr/"},
+                {"@type": "Brand", "position": 4, "name": "Airwell", "url": "https://www.airwell.com/fr/"}
+            ]
+        }
+        </script>
     </head>
     <body>
         <div class="page-wrapper">
@@ -72,7 +118,7 @@
                             <a href="service.html" class="navbar_link w-inline-block">
                                 <div>Services</div>
                             </a>
-                            <a href="marques.html" class="navbar_link w-inline-block">
+                            <a href="marques.html" aria-current="page" class="navbar_link w-inline-block w--current">
                                 <div>Nos marques</div>
                             </a>
                             <a href="blog.html" class="navbar_link w-inline-block">
@@ -102,7 +148,7 @@
                                             <a href="documentation.html" data-animation="text-flip" class="navbar-dropdown_link w-inline-block">
                                                 <div>Documentation</div>
                                             </a>
-                                            <a href="espace-pro.html" data-animation="text-flip" aria-current="page" class="navbar-dropdown_link w-inline-block w--current">
+                                            <a href="espace-pro.html" data-animation="text-flip" class="navbar-dropdown_link w-inline-block">
                                                 <div>Espace Pro</div>
                                             </a>
                                         </div>
@@ -196,32 +242,17 @@
                                 <div class="service-hero_content">
                                     <div class="content-align-center">
                                         <div class="margin-bottom margin-16px">
-                                            <div class="status-badge_wrap">Bientôt disponible</div>
-                                            <h1 hero-text-split="" class="heading">Votre espace professionnel Brothers Négoce arrive bientôt</h1>
+                                            <div class="status-badge_wrap">Distribution officielle</div>
+                                            <h1 hero-text-split="" class="heading">Nos marques partenaires</h1>
                                         </div>
                                         <div class="margin-bottom margin-32px">
-                                            <p class="service-hero_para">Accès aux tarifs pro, suivi de commandes, catalogue personnalisé et historique d'achats : un espace dédié aux installateurs, chauffagistes et entreprises RGE est en préparation.</p>
+                                            <p class="service-hero_para">Brothers Négoce sélectionne et distribue des marques reconnues du marché du chauffage, de la climatisation et de l'eau chaude sanitaire, pour garantir à nos clients installateurs des produits fiables et un service après-vente de qualité.</p>
                                         </div>
-                                        <div class="button-container">
-                                            <a data-wf--button-primary--variant="base" href="mailto:commandes@brothersnegoce.com?subject=Demande%20d%27acc%C3%A8s%20professionnel" class="button_primary w-inline-block">
-                                                <div class="button_inner">
-                                                    <div class="button-text_wrap">
-                                                        <div class="button_text">Demander un accès pro</div>
-                                                    </div>
-                                                    <div class="button-icon_group">
-                                                        <div class="button-icon_wrap">
-                                                            <svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 12 12" fill="none" vector-effect="non-scaling-stroke" preserveAspectRatio="none">
-                                                                <path d="M4.70139 0.75L10.5303 0.750201L10.5303 6.55165M0.530334 10.75L10.2896 0.990932" stroke="currentColor" stroke-width="1.5"></path>
-                                                            </svg>
-                                                        </div>
-                                                        <div class="button-icon_wrap is-hover">
-                                                            <svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 12 12" fill="none" vector-effect="non-scaling-stroke" preserveAspectRatio="none">
-                                                                <path d="M4.70139 0.75L10.5303 0.750201L10.5303 6.55165M0.530334 10.75L10.2896 0.990932" stroke="currentColor" stroke-width="1.5"></path>
-                                                            </svg>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </a>
+                                        <div class="brand-submenu_wrap" role="navigation" aria-label="Sous-menu des marques">
+                                            <a href="#lg" class="brand-submenu_link">LG Electronics France</a>
+                                            <a href="#ariston" class="brand-submenu_link">Ariston</a>
+                                            <a href="#intuis" class="brand-submenu_link">Intuis</a>
+                                            <a href="#airwell" class="brand-submenu_link">Airwell</a>
                                         </div>
                                     </div>
                                 </div>
@@ -243,69 +274,113 @@
                                                         <path d="M12 5.45455H7.31455L10.6255 2.14364L9.85636 1.37455L6.54545 4.68545V0H5.45455V4.68545L2.14364 1.37455L1.37455 2.14364L4.68545 5.45455H0V6.54545H4.68545L1.37455 9.85636L2.14364 10.6255L5.45455 7.31455V12H6.54545V7.31455L9.85636 10.6255L10.6255 9.85636L7.31455 6.54545H12V5.45455Z" fill="currentColor"></path>
                                                     </svg>
                                                 </div>
-                                                <div>Espace Pro</div>
+                                                <div>Nos partenaires</div>
                                             </div>
                                         </div>
                                         <h2>
-                                            Tout ce que <span class="text-highlighted">l'espace pro</span>
-                                            vous apportera
+                                            Quatre <span class="text-highlighted">marques de référence</span>
+                                            pour équiper vos chantiers
                                         </h2>
                                     </div>
                                 </div>
-                                <div class="w-dyn-list">
-                                    <div role="list" class="collection-list w-dyn-items">
-                                        <div role="listitem" class="w-dyn-item">
-                                            <div class="service-item_wrap">
-                                                <div class="service-item_trigger">
-                                                    <div class="service-trigger_content-wrap">
-                                                        <h3 class="service-trigger_title">Tarifs professionnels</h3>
-                                                        <div class="service-trigger_para-wrap">
-                                                            <p class="service-trigger_para">Accédez à vos conditions tarifaires négociées, sans avoir à les redemander à chaque commande.</p>
-                                                        </div>
+                                <div id="lg" class="brand_card">
+                                    <h3 class="brand_card-name">LG Electronics France</h3>
+                                    <p>LG est un constructeur coréen présent dans le chauffage et la climatisation, reconnu pour ses gammes de pompes à chaleur air/air (climatisation réversible mono et multi-split) et air/eau (gamme Therma V). Brothers Négoce distribue les produits LG auprès des installateurs professionnels.</p>
+                                    <div class="button-container">
+                                        <a href="https://www.lg.com/fr/" target="_blank" rel="noopener" class="button_primary w-inline-block">
+                                            <div class="button_inner">
+                                                <div class="button-text_wrap">
+                                                    <div class="button_text">Visiter le site officiel LG</div>
+                                                </div>
+                                                <div class="button-icon_group">
+                                                    <div class="button-icon_wrap">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 12 12" fill="none" vector-effect="non-scaling-stroke" preserveAspectRatio="none">
+                                                            <path d="M4.70139 0.75L10.5303 0.750201L10.5303 6.55165M0.530334 10.75L10.2896 0.990932" stroke="currentColor" stroke-width="1.5"></path>
+                                                        </svg>
                                                     </div>
-                                                    <div class="status-badge_wrap">Bientôt disponible</div>
+                                                    <div class="button-icon_wrap is-hover">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 12 12" fill="none" vector-effect="non-scaling-stroke" preserveAspectRatio="none">
+                                                            <path d="M4.70139 0.75L10.5303 0.750201L10.5303 6.55165M0.530334 10.75L10.2896 0.990932" stroke="currentColor" stroke-width="1.5"></path>
+                                                        </svg>
+                                                    </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <div role="listitem" class="w-dyn-item">
-                                            <div class="service-item_wrap">
-                                                <div class="service-item_trigger">
-                                                    <div class="service-trigger_content-wrap">
-                                                        <h3 class="service-trigger_title">Suivi de commandes</h3>
-                                                        <div class="service-trigger_para-wrap">
-                                                            <p class="service-trigger_para">Visualisez en temps réel l'état de vos commandes en cours, de la validation à la livraison.</p>
-                                                        </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div id="ariston" class="brand_card">
+                                    <h3 class="brand_card-name">Ariston</h3>
+                                    <p>Ariston est un acteur historique du chauffage et de l'eau chaude sanitaire, avec des solutions de ballons thermodynamiques, chaudières et pompes à chaleur. Ses produits sont sélectionnés par Brothers Négoce pour leur fiabilité sur les chantiers de rénovation énergétique.</p>
+                                    <div class="button-container">
+                                        <a href="https://www.ariston.com/fr-fr/" target="_blank" rel="noopener" class="button_primary w-inline-block">
+                                            <div class="button_inner">
+                                                <div class="button-text_wrap">
+                                                    <div class="button_text">Visiter le site officiel Ariston</div>
+                                                </div>
+                                                <div class="button-icon_group">
+                                                    <div class="button-icon_wrap">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 12 12" fill="none" vector-effect="non-scaling-stroke" preserveAspectRatio="none">
+                                                            <path d="M4.70139 0.75L10.5303 0.750201L10.5303 6.55165M0.530334 10.75L10.2896 0.990932" stroke="currentColor" stroke-width="1.5"></path>
+                                                        </svg>
                                                     </div>
-                                                    <div class="status-badge_wrap">Bientôt disponible</div>
+                                                    <div class="button-icon_wrap is-hover">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 12 12" fill="none" vector-effect="non-scaling-stroke" preserveAspectRatio="none">
+                                                            <path d="M4.70139 0.75L10.5303 0.750201L10.5303 6.55165M0.530334 10.75L10.2896 0.990932" stroke="currentColor" stroke-width="1.5"></path>
+                                                        </svg>
+                                                    </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <div role="listitem" class="w-dyn-item">
-                                            <div class="service-item_wrap">
-                                                <div class="service-item_trigger">
-                                                    <div class="service-trigger_content-wrap">
-                                                        <h3 class="service-trigger_title">Catalogue personnalisé</h3>
-                                                        <div class="service-trigger_para-wrap">
-                                                            <p class="service-trigger_para">Un catalogue adapté à votre activité, avec vos références favorites mises en avant.</p>
-                                                        </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div id="intuis" class="brand_card">
+                                    <h3 class="brand_card-name">Intuis</h3>
+                                    <p>Intuis (groupe Muller) conçoit des solutions de chauffage électrique et des pompes à chaleur destinées au marché résidentiel français. Brothers Négoce propose une partie de cette gamme à ses clients installateurs RGE.</p>
+                                    <div class="button-container">
+                                        <a href="https://intuis.fr/" target="_blank" rel="noopener" class="button_primary w-inline-block">
+                                            <div class="button_inner">
+                                                <div class="button-text_wrap">
+                                                    <div class="button_text">Visiter le site officiel Intuis</div>
+                                                </div>
+                                                <div class="button-icon_group">
+                                                    <div class="button-icon_wrap">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 12 12" fill="none" vector-effect="non-scaling-stroke" preserveAspectRatio="none">
+                                                            <path d="M4.70139 0.75L10.5303 0.750201L10.5303 6.55165M0.530334 10.75L10.2896 0.990932" stroke="currentColor" stroke-width="1.5"></path>
+                                                        </svg>
                                                     </div>
-                                                    <div class="status-badge_wrap">Bientôt disponible</div>
+                                                    <div class="button-icon_wrap is-hover">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 12 12" fill="none" vector-effect="non-scaling-stroke" preserveAspectRatio="none">
+                                                            <path d="M4.70139 0.75L10.5303 0.750201L10.5303 6.55165M0.530334 10.75L10.2896 0.990932" stroke="currentColor" stroke-width="1.5"></path>
+                                                        </svg>
+                                                    </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <div role="listitem" class="w-dyn-item">
-                                            <div class="service-item_wrap">
-                                                <div class="service-item_trigger">
-                                                    <div class="service-trigger_content-wrap">
-                                                        <h3 class="service-trigger_title">Historique d'achats</h3>
-                                                        <div class="service-trigger_para-wrap">
-                                                            <p class="service-trigger_para">Retrouvez l'ensemble de vos commandes passées et recommandez en quelques clics.</p>
-                                                        </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div id="airwell" class="brand_card">
+                                    <h3 class="brand_card-name">Airwell</h3>
+                                    <p>Airwell est une marque française historique de climatisation et de pompes à chaleur air/air et air/eau, distribuée par Brothers Négoce pour les besoins en climatisation réversible et en chauffage des professionnels.</p>
+                                    <div class="button-container">
+                                        <a href="https://www.airwell.com/fr/" target="_blank" rel="noopener" class="button_primary w-inline-block">
+                                            <div class="button_inner">
+                                                <div class="button-text_wrap">
+                                                    <div class="button_text">Visiter le site officiel Airwell</div>
+                                                </div>
+                                                <div class="button-icon_group">
+                                                    <div class="button-icon_wrap">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 12 12" fill="none" vector-effect="non-scaling-stroke" preserveAspectRatio="none">
+                                                            <path d="M4.70139 0.75L10.5303 0.750201L10.5303 6.55165M0.530334 10.75L10.2896 0.990932" stroke="currentColor" stroke-width="1.5"></path>
+                                                        </svg>
                                                     </div>
-                                                    <div class="status-badge_wrap">Bientôt disponible</div>
+                                                    <div class="button-icon_wrap is-hover">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 12 12" fill="none" vector-effect="non-scaling-stroke" preserveAspectRatio="none">
+                                                            <path d="M4.70139 0.75L10.5303 0.750201L10.5303 6.55165M0.530334 10.75L10.2896 0.990932" stroke="currentColor" stroke-width="1.5"></path>
+                                                        </svg>
+                                                    </div>
                                                 </div>
                                             </div>
-                                        </div>
+                                        </a>
                                     </div>
                                 </div>
                             </div>
@@ -324,18 +399,18 @@
                                                     <path d="M12 5.45455H7.31455L10.6255 2.14364L9.85636 1.37455L6.54545 4.68545V0H5.45455V4.68545L2.14364 1.37455L1.37455 2.14364L4.68545 5.45455H0V6.54545H4.68545L1.37455 9.85636L2.14364 10.6255L5.45455 7.31455V12H6.54545V7.31455L9.85636 10.6255L10.6255 9.85636L7.31455 6.54545H12V5.45455Z" fill="currentColor"></path>
                                                 </svg>
                                             </div>
-                                            <div>Réservé aux professionnels</div>
+                                            <div>Une question sur nos marques ?</div>
                                         </div>
                                         <h2>
-                                            Demandez votre accès <span class="text-highlighted">professionnel</span>
+                                            Besoin de conseils <span class="text-highlighted">sur le bon produit ?</span>
                                         </h2>
-                                        <p class="text-color-light">Installateurs, chauffagistes, plombiers, électriciens et entreprises RGE : faites-en la demande dès maintenant, notre équipe vous recontacte rapidement.</p>
+                                        <p class="text-color-light">Notre équipe vous aide à choisir la marque et la référence adaptées à votre chantier.</p>
                                     </div>
                                     <div class="button-container">
-                                        <a data-wf--button-primary--variant="light" href="mailto:commandes@brothersnegoce.com?subject=Demande%20d%27acc%C3%A8s%20professionnel" class="button_primary w-variant-62db4792-8717-dbe8-e811-0d36eb02f9ec w-inline-block">
+                                        <a data-wf--button-primary--variant="light" href="mailto:commandes@brothersnegoce.com?subject=Question%20sur%20vos%20marques" class="button_primary w-variant-62db4792-8717-dbe8-e811-0d36eb02f9ec w-inline-block">
                                             <div class="button_inner">
                                                 <div class="button-text_wrap">
-                                                    <div class="button_text">Demander un accès pro</div>
+                                                    <div class="button_text">Nous contacter</div>
                                                 </div>
                                                 <div class="button-icon_group w-variant-62db4792-8717-dbe8-e811-0d36eb02f9ec">
                                                     <div class="button-icon_wrap">
@@ -418,7 +493,7 @@
                                         <a href="service.html" class="footer-menu_link w-inline-block">
                                             <div>Services</div>
                                         </a>
-                                        <a href="marques.html" class="footer-menu_link w-inline-block">
+                                        <a href="marques.html" aria-current="page" class="footer-menu_link w-inline-block w--current">
                                             <div>Nos marques</div>
                                         </a>
                                         <a href="blog.html" class="footer-menu_link w-inline-block">
@@ -441,7 +516,7 @@
                                         <a href="documentation.html" class="footer-menu_link w-inline-block">
                                             <div>Documentation</div>
                                         </a>
-                                        <a href="espace-pro.html" aria-current="page" class="footer-menu_link w-inline-block w--current">
+                                        <a href="espace-pro.html" class="footer-menu_link w-inline-block">
                                             <div>Espace Pro</div>
                                         </a>
                                     </div>
@@ -540,7 +615,7 @@
             var t=(label||'Brothers Négoce').replace(/[<>&]/g,'').slice(0,22);
             var svg='<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720">'
              +'<defs><linearGradient id="lg" x1="0" y1="0" x2="1280" y2="720" gradientUnits="userSpaceOnUse">'
-             +'<stop offset="0" stop-color="#24a3b1"/><stop offset="1" stop-color="#011f23"/></linearGradient></defs>'
+             +'<stop offset="0" stop-color="#0A8B8E"/><stop offset="1" stop-color="#063E45"/></linearGradient></defs>'
              +'<rect width="1280" height="720" fill="url(#lg)"/>'
              +'<circle cx="640" cy="298" r="44" fill="#fff" opacity="0.9"/>'
              +'<text x="640" y="436" fill="#fff" font-family="Sora,Arial" font-size="40" font-weight="600" text-anchor="middle" opacity="0.92">'+t+'</text></svg>';

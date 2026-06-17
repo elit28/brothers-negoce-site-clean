@@ -3621,6 +3621,15 @@ figure {
   max-width: 140px;
 }
 
+.footer_brand .brand_logo,
+.footer_brand img {
+  background: #fff;
+  padding: 10px 14px;
+  border-radius: 8px;
+  width: 100%;
+  height: auto;
+}
+
 .footer-contact_wrap {
   grid-column-gap: var(--_size-variables---element-spacing--xl);
   grid-row-gap: var(--_size-variables---element-spacing--xl);
