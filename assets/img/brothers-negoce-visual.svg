@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000" fill="none">
+  <rect width="1600" height="1000" fill="#071A2F"/>
+  <circle cx="1260" cy="210" r="330" fill="#19A7CE" opacity="0.22"/>
+  <circle cx="260" cy="820" r="420" fill="#0EA5E9" opacity="0.18"/>
+  <rect x="170" y="170" width="1260" height="660" rx="48" fill="white" opacity="0.08"/>
+  <rect x="250" y="260" width="480" height="70" rx="18" fill="white" opacity="0.22"/>
+  <rect x="250" y="370" width="700" height="34" rx="17" fill="white" opacity="0.15"/>
+  <rect x="250" y="430" width="610" height="34" rx="17" fill="white" opacity="0.12"/>
+  <rect x="250" y="560" width="260" height="74" rx="22" fill="#19A7CE"/>
+  <rect x="1030" y="300" width="230" height="230" rx="34" fill="white" opacity="0.16"/>
+  <path d="M1090 460L1150 330H1230L1170 420H1270L1115 620L1160 460H1090Z" fill="#19A7CE"/>
+  <text x="250" y="735" font-family="Arial, Helvetica, sans-serif" font-size="46" font-weight="700" fill="white">Brothers Négoce</text>
+  <text x="250" y="790" font-family="Arial, Helvetica, sans-serif" font-size="28" fill="white" opacity="0.72">Distribution professionnelle · PAC · CVC · rénovation énergétique</text>
+</svg>
