@@ -2061,7 +2061,7 @@ textarea.w-input, textarea.w-select {
 
 :root {
   --_font---font-family--primary: Sora, sans-serif;
-  --primitive-color--primary-900: #011f23;
+  --primitive-color--primary-900: #071A2F;
   --_font---font-size-semantics--body-base: var(--_font---font-size-primitive--text-base);
   --_font---line-height--145: 145%;
   --_font---font-weight--400: 400;
@@ -2101,21 +2101,21 @@ textarea.w-input, textarea.w-select {
   --_size-variables---element-spacing--10xl: 48px;
   --_size-variables---border-radius--2xl: 16px;
   --primitive-color--neutral-0: white;
-  --primitive-color--primary-500: #24a3b1;
+  --primitive-color--primary-500: #4EA296;
   --_size-variables---element-spacing--5xl: 30px;
   --_size-variables---border-radius--8xl: 99px;
   --_size-variables---border-radius--xl: 12px;
-  --primitive-color--primary-700: #022f34;
+  --primitive-color--primary-700: #0A7C82;
   --primitive-color--black: black;
   --primitive-color--neutral-400: #c5c5c5;
   --_size-variables---element-spacing--4xl: 28px;
-  --primitive-color--primary-400: #587d81;
-  --primitive-color--primary-800: #002124;
+  --primitive-color--primary-400: #4EA296;
+  --primitive-color--primary-800: #063E45;
   --_font---font-size-semantics--body-sm: var(--_font---font-size-primitive--text-sm);
   --primitive-color--tertiary\<deleted\|variable-e47306d3-1554-0bc6-431b-d27da8462b48\>: grey;
   --theme-color--success: var(--primitive-color--primary-900);
   --_size-variables---border-radius--lg: 10px;
-  --primitive-color--neutral-300: #ddebec;
+  --primitive-color--neutral-300: #E7FDFC;
   --theme-color--error: #d32f2f;
   --_font---font-size-semantics--body-lg: var(--_font---font-size-primitive--text-lg);
   --_font---font-size-semantics--body-2xl: var(--_font---font-size-primitive--text-3xl);
@@ -2131,14 +2131,14 @@ textarea.w-input, textarea.w-select {
   --_size-variables---section-padding--xl: var(--_size-variables---element-spacing--22xl);
   --_size-variables---element-spacing--12xl: 56px;
   --color-white-2\<deleted\|variable-669e398d-e0b9-4945-dd67-db7a47faee68\>: white;
-  --primitive-color--neutral-100: #f3f6ff;
+  --primitive-color--neutral-100: #E7FDFC;
   --_font---line-height--125: 125%;
   --_font---letter-spacing--0-32px: -.32px;
-  --primitive-color--primary-600: #1c91a1;
+  --primitive-color--primary-600: #0A8B8E;
   --primitive-color--transparent: transparent;
   --_size-variables---element-spacing--7xl: 36px;
   --color-shadow--white-50: #ffffff80;
-  --primitive-color--neutral-50: #fef5ec;
+  --primitive-color--neutral-50: #F7FCFC;
   --_size-variables---border-radius--4xl: 24px;
   --_font---font-weight--600: 600;
   --_font---line-height--150: 150%;
@@ -2162,7 +2162,7 @@ textarea.w-input, textarea.w-select {
   --_icon-size---icon--48: 48px;
   --primitive-color--gray-500: #6e7677;
   --_size-variables---element-spacing--11xl: 52px;
-  --primitive-color--neutral-200: #e2f1f3;
+  --primitive-color--neutral-200: #E7FDFC;
   --_font---line-height--140: 140%;
   --_size-variables---element-spacing--tiny: 2px;
   --color-shadow--white-40: #fff6;
