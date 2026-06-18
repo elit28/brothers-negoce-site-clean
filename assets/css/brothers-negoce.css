@@ -9255,6 +9255,11 @@ footer{border-top:3px solid var(--primitive-color--primary-500,#24a3b1);}
   border-top: 3px solid var(--primitive-color--primary-700, #0f6e78);
   border-radius: var(--_size-variables---border-radius--2xl, 12px);
   padding: 28px 24px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.process-step:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 28px var(--color-shadow--neutral-12, #c8c8c81f);
 }
 .process-step_number {
   font-size: 2em;

@@ -2337,6 +2337,29 @@
             })();
         </script>
 
+        <script>
+            /* Staggered card reveal for the value-add and process grids */
+            (function () {
+                function runCardStagger() {
+                    if (!window.gsap || !window.ScrollTrigger) return;
+                    gsap.registerPlugin(ScrollTrigger);
+                    document.querySelectorAll('.value-grid, .process-grid').forEach(function (grid) {
+                        var cards = grid.children;
+                        if (!cards.length) return;
+                        gsap.fromTo(cards,
+                            { opacity: 0, y: 30 },
+                            {
+                                opacity: 1, y: 0, duration: 0.6, ease: 'power2.out', stagger: 0.12,
+                                scrollTrigger: { trigger: grid, start: 'top 90%', once: true }
+                            }
+                        );
+                    });
+                }
+                if (document.readyState !== 'loading') setTimeout(runCardStagger, 200);
+                else document.addEventListener('DOMContentLoaded', function () { setTimeout(runCardStagger, 200); });
+            })();
+        </script>
+
 
     
         <script>
