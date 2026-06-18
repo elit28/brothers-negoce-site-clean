@@ -106,13 +106,13 @@
     "home_process": {
       "page": "index",
       "heading": "Un accompagnement à chaque étape du projet",
-      "body": "De l'étude des aides jusqu'au suivi après livraison, Brothers Négoce accompagne les professionnels avec une approche claire, concrète et orientée terrain.",
+      "body": "De la sélection du matériel jusqu'au suivi après livraison, Brothers Négoce accompagne les professionnels avec une approche claire, concrète et orientée terrain.",
       "steps": [
-        { "number": "01", "title": "Aides & dispositifs", "body": "Orientation sur les aides disponibles : CEE, MaPrimeRénov' et dispositifs liés à la rénovation énergétique." },
-        { "number": "02", "title": "Dossier & valorisation", "body": "Aide à la préparation, au suivi et à la valorisation des dossiers pour sécuriser chaque projet." },
-        { "number": "03", "title": "Conception & choix produit", "body": "Sélection des bonnes solutions selon les besoins chantier, avec l'appui de marques partenaires." },
-        { "number": "04", "title": "Stock, garantie & transport", "body": "Conseil sur les disponibilités, les garanties, les délais et l'organisation du transport." },
-        { "number": "05", "title": "Suivi & SAV", "body": "Un interlocuteur pour accompagner les questions techniques et les besoins après livraison." }
+        { "number": "01", "title": "Conseil & choix produit", "body": "Sélection des bonnes références selon les besoins du chantier, avec l'appui de nos marques partenaires." },
+        { "number": "02", "title": "Disponibilité & devis", "body": "Vérification du stock, des délais et des tarifs pour sécuriser votre commande dès le départ." },
+        { "number": "03", "title": "Commande & logistique", "body": "Préparation de commande et organisation du transport pour respecter le planning du chantier." },
+        { "number": "04", "title": "Livraison & garantie", "body": "Livraison sur chantier ou en dépôt, avec un suivi clair des garanties constructeur." },
+        { "number": "05", "title": "Suivi & SAV", "body": "Un interlocuteur unique pour les questions techniques et le service après-vente." }
       ],
       "cta": { "label": "Parler à un conseiller", "href": "#contact" }
     },
