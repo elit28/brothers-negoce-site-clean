@@ -9223,12 +9223,15 @@ footer{border-top:3px solid var(--primitive-color--primary-500,#24a3b1);}
 }
 .value-card_title {
   font-size: 1.125em;
+  line-height: 1.4;
+  letter-spacing: normal;
   font-weight: 600;
   color: #111;
   margin: 0 0 10px;
 }
 .value-card_body {
   color: #5a5a5a;
+  letter-spacing: normal;
   margin: 0;
   line-height: 1.5;
 }
@@ -9263,12 +9266,15 @@ footer{border-top:3px solid var(--primitive-color--primary-500,#24a3b1);}
 }
 .process-step_title {
   font-size: 1em;
+  line-height: 1.4;
+  letter-spacing: normal;
   font-weight: 600;
   color: #111;
   margin: 0 0 8px;
 }
 .process-step_body {
   color: #5a5a5a;
+  letter-spacing: normal;
   font-size: 0.9em;
   margin: 0;
   line-height: 1.5;
