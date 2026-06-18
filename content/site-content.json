@@ -1,7 +1,7 @@
 {
   "_meta": {
     "description": "Fichier de contenu temporaire et statique pour le site Brothers Négoce. Sert de pont avant la migration vers Directus + PostgreSQL : la structure ci-dessous reflète les futures collections Directus (voir content/directus-schema.md). Le site reste 100% statique tant que ce fichier n'est pas consommé par du code — aujourd'hui il documente/centralise le contenu, il n'est pas encore branché aux pages HTML.",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "lastUpdated": "2026-06-18"
   },
 
@@ -22,49 +22,49 @@
       "slug": "marques",
       "title": "Nos marques",
       "path": "marques.html",
-      "sections": ["marques_hero", "marques_submenu", "marques_list"]
+      "sections": ["marques_hero", "marques_submenu", "marques_list", "marques_cta-final"]
     },
     {
       "slug": "service",
       "title": "Nos services",
       "path": "service.html",
-      "sections": []
+      "sections": ["service_hero", "service_list", "service_faq", "service_cta-final"]
     },
     {
       "slug": "catalogue",
       "title": "Catalogue",
       "path": "catalogue.html",
-      "sections": []
+      "sections": ["catalogue_hero", "catalogue_categories", "catalogue_cta-final"]
     },
     {
       "slug": "outils",
       "title": "Outils",
       "path": "outils.html",
-      "sections": []
+      "sections": ["outils_hero", "outils_list", "outils_cta-final"]
     },
     {
       "slug": "sav",
       "title": "SAV",
       "path": "sav.html",
-      "sections": []
+      "sections": ["sav_hero", "sav_features", "sav_cta-final"]
     },
     {
       "slug": "documentation",
       "title": "Documentation",
       "path": "documentation.html",
-      "sections": []
+      "sections": ["documentation_hero", "documentation_categories", "documentation_cta-final"]
     },
     {
       "slug": "espace-pro",
       "title": "Espace Pro",
       "path": "espace-pro.html",
-      "sections": []
+      "sections": ["espace-pro_hero", "espace-pro_benefits", "espace-pro_cta-final"]
     },
     {
       "slug": "blog",
       "title": "Blog",
       "path": "blog.html",
-      "sections": []
+      "sections": ["blog_hero", "blog_featured", "blog_list", "blog_faq", "blog_cta-final"]
     },
     {
       "slug": "privacy",
@@ -103,6 +103,20 @@
         { "title": "Conseil & suivi projet", "body": "Un accompagnement clair avant, pendant et après le projet, jusqu'au SAV." }
       ]
     },
+    "home_services": {
+      "page": "index",
+      "tag": "Nos services",
+      "heading": "Nos univers produits pour les professionnels",
+      "body": "Brothers Négoce combine expertise produit, distribution B2B et vision digitale pour accompagner les installateurs, artisans et entreprises dans leurs projets de rénovation énergétique.",
+      "cta": { "label": "Voir tous les services", "href": "service.html" },
+      "items": [
+        { "number": "01", "title": "Pompes à chaleur air/eau", "body": "Une sélection de solutions PAC air/eau pour les professionnels, avec une approche centrée sur le besoin chantier, la disponibilité et l'accompagnement commercial.", "tags": ["Demandes", "Pose & mise en service", "Support technique", "Documentation technique"], "cta": { "label": "Voir le détail", "href": "service.html" } },
+        { "number": "02", "title": "Pompes à chaleur air/air", "body": "Les pompes à chaleur air/air répondent aux besoins de confort thermique, de chauffage et de climatisation, avec des solutions adaptées aux professionnels.", "tags": ["Régulation & pilotage", "Ballons thermodynamiques", "Accessoires & raccordement", "Aides à la rénovation"], "cta": { "label": "Voir le détail", "href": "service.html" } },
+        { "number": "03", "title": "Eau chaude sanitaire", "body": "Ballons thermodynamiques et solutions de production d'eau chaude sanitaire pour les installateurs, avec un accompagnement technique sur le dimensionnement et le raccordement.", "tags": ["Ballons thermodynamiques", "Production ECS", "Raccordement hydraulique", "Mise en service"], "cta": { "label": "Voir le détail", "href": "service.html" } },
+        { "number": "04", "title": "Isolation thermique", "body": "Des produits techniques pour accompagner les projets de rénovation énergétique et l'optimisation thermique des bâtiments.", "tags": ["Isolation thermique", "Réseaux & raccords", "Pièces détachées & SAV", "Études techniques"], "cta": { "label": "Voir le détail", "href": "service.html" } },
+        { "number": "05", "title": "Ventilation", "body": "Des solutions de ventilation et de traitement d'air pour répondre aux exigences de qualité d'air intérieur et de conformité des installations CVC.", "tags": ["Conduits & gaines", "Filtration & traitement d'air", "Mise en service", "Conformité & normes"], "cta": { "label": "Voir le détail", "href": "service.html" } }
+      ]
+    },
     "home_process": {
       "page": "index",
       "heading": "Un accompagnement à chaque étape du projet",
@@ -121,12 +135,12 @@
       "heading": "Des marques solides pour répondre aux besoins terrain",
       "body": "Brothers Négoce s'appuie sur un réseau de fabricants reconnus pour proposer des solutions fiables en chauffage, solaire, isolation, ventilation et eau chaude sanitaire.",
       "items": [
-        { "name": "LG", "category": "Pompes à chaleur", "tagline": "Technologie & performance", "body": "Solutions chauffage et climatisation pour accompagner les projets résidentiels et tertiaires.", "href": "marques.html#lg" },
-        { "name": "Ariston", "category": "Eau chaude sanitaire", "tagline": "Confort & efficacité", "body": "Solutions pour l'eau chaude, les ballons thermodynamiques et les équipements performants.", "href": "marques.html#ariston" },
-        { "name": "Intuis", "category": "Chauffage", "tagline": "Proximité marché français", "body": "Des solutions thermiques pensées pour les besoins des installateurs et des chantiers en France.", "href": "marques.html#intuis" },
-        { "name": "Airwell", "category": "Chauffage & climatisation", "tagline": "Solutions thermiques", "body": "Des produits pour répondre aux besoins de chauffage, rafraîchissement et confort intérieur.", "href": "marques.html#airwell" },
-        { "name": "Hirsch", "category": "Isolation", "tagline": "Performance thermique", "body": "Des solutions d'isolation pour améliorer l'efficacité énergétique des bâtiments.", "href": "marques.html#hirsch" },
-        { "name": "Solenso", "category": "Solaire", "tagline": "Panneaux & micro-onduleurs", "body": "Des solutions solaires pensées pour simplifier l'installation et optimiser la production.", "href": "marques.html#solenso" }
+        { "name": "LG", "category": "Pompes à chaleur", "tagline": "Technologie & performance", "body": "Solutions chauffage et climatisation pour accompagner les projets résidentiels et tertiaires.", "href": "marques-lg.html" },
+        { "name": "Ariston", "category": "Eau chaude sanitaire", "tagline": "Confort & efficacité", "body": "Solutions pour l'eau chaude, les ballons thermodynamiques et les équipements performants.", "href": "marques-ariston.html" },
+        { "name": "Intuis", "category": "Chauffage", "tagline": "Proximité marché français", "body": "Des solutions thermiques pensées pour les besoins des installateurs et des chantiers en France.", "href": "marques-intuis.html" },
+        { "name": "Airwell", "category": "Chauffage & climatisation", "tagline": "Solutions thermiques", "body": "Des produits pour répondre aux besoins de chauffage, rafraîchissement et confort intérieur.", "href": "marques-airwell.html" },
+        { "name": "Hirsch", "category": "Isolation", "tagline": "Performance thermique", "body": "Des solutions d'isolation pour améliorer l'efficacité énergétique des bâtiments.", "href": "marques-hirsch.html" },
+        { "name": "Solenso", "category": "Solaire", "tagline": "Panneaux & micro-onduleurs", "body": "Des solutions solaires pensées pour simplifier l'installation et optimiser la production.", "href": "marques-solenso.html" }
       ]
     },
     "home_shop-cta": {
@@ -137,6 +151,62 @@
       "primaryCta": { "label": "Accéder à la boutique", "href": "https://www.brothersnegoce.com/shop", "external": true },
       "secondaryCta": { "label": "Demander un conseil", "href": "#contact" },
       "caption": "Produits chantier — Stock, références PAC, accessoires et solutions pros."
+    },
+    "home_testimonials": {
+      "page": "index",
+      "tag": "Témoignages",
+      "heading": "La parole de nos clients professionnels",
+      "items": [
+        { "author": "Kristin Watson", "role": "Chauffagiste, gérante", "quote": "Brothers Négoce a simplifié notre approvisionnement : disponibilité claire, équipe réactive et un vrai accompagnement sur les références techniques." },
+        { "author": "Michael Carter", "role": "Installateur PAC, artisan RGE", "quote": "Catalogue clair, conseil technique précis et délais tenus. Un négoce qui comprend les contraintes de chantier des installateurs." },
+        { "author": "Daniel Hughes", "role": "Plombier-chauffagiste", "quote": "De la demande de devis à la livraison, tout est simple et sans surprise. Une équipe disponible qui répond vite à nos questions techniques." }
+      ]
+    },
+    "home_blog": {
+      "page": "index",
+      "tag": "Actualités",
+      "heading": "Actualités et conseils techniques du secteur",
+      "cta": { "label": "Voir toutes les actualités", "href": "blog.html" },
+      "items": [
+        { "title": "PAC air/eau ou air/air : comment bien orienter votre client selon le projet", "cta": { "label": "Lire la suite", "href": "blog.html" } },
+        { "title": "Aides à la rénovation énergétique : ce qui change pour les installateurs RGE", "cta": { "label": "Lire la suite", "href": "blog.html" } },
+        { "title": "Ballons thermodynamiques : critères de choix pour vos chantiers", "cta": { "label": "Lire la suite", "href": "blog.html" } }
+      ]
+    },
+    "home_faq": {
+      "page": "index",
+      "tag": "FAQ",
+      "heading": "Questions fréquentes",
+      "body": "Les réponses aux questions les plus fréquentes sur nos délais, notre accès pro et nos services",
+      "sideCard": {
+        "title": "Une autre question ?",
+        "body": "Notre équipe est disponible pour répondre à toute demande.",
+        "cta": { "label": "Contacter l'équipe", "href": "mailto:commandes@brothersnegoce.com" }
+      },
+      "items": [
+        { "question": "Comment obtenir un accès professionnel ?", "answer": "Vous pouvez contacter notre équipe pour une demande de catalogue, un accès professionnel, une question produit ou une demande commerciale." },
+        { "question": "Quels sont vos délais de livraison ?", "answer": "Le stock disponible sur les références clés permet une expédition rapide. Les délais exacts sont confirmés à la commande selon le produit." },
+        { "question": "Comment obtenir le catalogue complet ?", "answer": "Contactez-nous par email ou téléphone pour recevoir notre catalogue détaillé, adapté à votre activité et à vos besoins." },
+        { "question": "Quels univers de produits proposez-vous ?", "answer": "Nous proposons des univers produits adaptés aux professionnels : PAC, CVC, isolation, ballons thermodynamiques, accessoires et documentation technique." },
+        { "question": "Comment fonctionne le SAV en cas de problème produit ?", "answer": "Notre équipe SAV traite chaque demande rapidement : contactez-nous avec votre référence de commande pour un suivi personnalisé." }
+      ]
+    },
+    "home_cta-final": {
+      "page": "index",
+      "tag": "Nous contacter",
+      "heading": "Parlons de votre projet, nous sommes à un message près",
+      "body": "Demandez votre accès pro ou votre catalogue, nous vous accompagnons à chaque étape.",
+      "cta": { "label": "Demander un accès pro", "href": "mailto:commandes@brothersnegoce.com" }
+    },
+    "about_hero": {
+      "page": "about",
+      "heading": "Un partenaire fiable pour les professionnels",
+      "body": "Chez Brothers Négoce, nous combinons expertise produit, rigueur logistique et accompagnement de proximité pour que chaque professionnel dispose du matériel adapté, livré dans les délais. Votre activité est notre priorité.",
+      "cta": { "label": "Demander un devis", "href": "mailto:commandes@brothersnegoce.com" },
+      "stats": [
+        { "value": "10+", "label": "Années d'expertise terrain" },
+        { "value": "10k+", "label": "Installateurs partenaires" }
+      ]
     },
     "about_story": {
       "page": "about",
@@ -166,6 +236,286 @@
         { "name": "Groupe Planète Service", "role": "Partenaire fondateur", "body": "Premier client devenu notre premier partenaire stratégique." },
         { "name": "EBS Énergie", "role": "Partenaire CEE", "body": "Partenaire dans le cadre des Certificats d'Économies d'Énergie." }
       ]
+    },
+    "about_team": {
+      "page": "about",
+      "tag": "Notre équipe",
+      "heading": "Les visages de notre expertise professionnelle",
+      "body": "Chaque membre de notre équipe est qualifié et engagé pour accompagner les professionnels avec un conseil technique fiable et un service réactif.",
+      "items": [
+        { "name": "Olivia Thompson", "role": "Direction Générale" },
+        { "name": "Rishi Patel", "role": "Responsable Commercial" },
+        { "name": "Emmanuel Collins", "role": "Conseiller Technique PAC" },
+        { "name": "Marc Thompson", "role": "Responsable Logistique" },
+        { "name": "Daniel Ahmed", "role": "Conseiller Technique CVC" },
+        { "name": "Sophie Collins", "role": "Service Client" }
+      ]
+    },
+    "about_cta-final": {
+      "page": "about",
+      "tag": "Une histoire qui continue avec vous",
+      "heading": "Construisons la suite ensemble",
+      "body": "Que vous prépariez un chantier ou cherchiez le bon partenaire matériel, notre équipe vous accompagne avec les bonnes références, les disponibilités et la logistique.",
+      "cta": { "label": "Nous contacter", "href": "mailto:commandes@brothersnegoce.com" }
+    },
+    "marques_hero": {
+      "page": "marques",
+      "badge": "Distribution officielle",
+      "heading": "Nos marques partenaires",
+      "body": "Brothers Négoce sélectionne et distribue des marques reconnues du marché du chauffage, de la climatisation et de l'eau chaude sanitaire, pour garantir à nos clients installateurs des produits fiables et un service après-vente de qualité."
+    },
+    "marques_submenu": {
+      "page": "marques",
+      "items": [
+        { "label": "LG Electronics France", "href": "#lg" },
+        { "label": "Ariston", "href": "#ariston" },
+        { "label": "Intuis", "href": "#intuis" },
+        { "label": "Airwell", "href": "#airwell" },
+        { "label": "Hirsch Isolation", "href": "#hirsch" },
+        { "label": "Solenso", "href": "#solenso" }
+      ]
+    },
+    "marques_list": {
+      "page": "marques",
+      "tag": "Nos partenaires",
+      "heading": "Six marques de référence pour équiper vos chantiers",
+      "items": [
+        { "slug": "lg", "name": "LG Electronics France", "logo": { "src": "assets/img/brands/lg-logo.svg", "alt": "Logo LG" }, "body": "LG est un constructeur coréen présent dans le chauffage et la climatisation, reconnu pour ses gammes de pompes à chaleur air/air (climatisation réversible mono et multi-split) et air/eau (gamme Therma V). Brothers Négoce distribue les produits LG auprès des installateurs professionnels.", "url": "https://www.lg.com/fr/", "cta": { "label": "Visiter le site officiel LG" } },
+        { "slug": "ariston", "name": "Ariston", "logo": { "src": "assets/img/brands/ariston-logo.svg", "alt": "Logo Ariston" }, "body": "Ariston est un acteur historique du chauffage et de l'eau chaude sanitaire, avec des solutions de ballons thermodynamiques, chaudières et pompes à chaleur. Ses produits sont sélectionnés par Brothers Négoce pour leur fiabilité sur les chantiers de rénovation énergétique.", "url": "https://www.ariston.com/fr-fr/", "cta": { "label": "Visiter le site officiel Ariston" } },
+        { "slug": "intuis", "name": "Intuis", "logo": { "src": "assets/img/brands/intuis-logo.png", "alt": "Logo Intuis" }, "body": "Intuis (groupe Muller) conçoit des solutions de chauffage électrique et des pompes à chaleur destinées au marché résidentiel français. Brothers Négoce propose une partie de cette gamme à ses clients installateurs RGE.", "url": "https://intuis.fr/", "cta": { "label": "Visiter le site officiel Intuis" } },
+        { "slug": "airwell", "name": "Airwell", "logo": { "src": "assets/img/brands/airwell-logo.png", "alt": "Logo Airwell" }, "body": "Airwell est une marque française historique de climatisation et de pompes à chaleur air/air et air/eau, distribuée par Brothers Négoce pour les besoins en climatisation réversible et en chauffage des professionnels.", "url": "https://www.airwell.com/fr/", "cta": { "label": "Visiter le site officiel Airwell" } },
+        { "slug": "hirsch", "name": "Hirsch Isolation", "logo": { "src": "assets/img/brands/hirsch-logo.png", "alt": "Logo Hirsch Isolation" }, "body": "Hirsch Isolation est un fabricant français spécialisé dans les solutions d'isolation thermique en polystyrène expansé (PSE), pour l'enveloppe du bâtiment (murs, sols, toitures). Brothers Négoce distribue ses gammes aux professionnels engagés dans des chantiers de performance thermique.", "url": "https://hirschisolation.fr/", "cta": { "label": "Visiter le site officiel Hirsch Isolation" } },
+        { "slug": "solenso", "name": "Solenso", "logo": { "src": "assets/img/brands/solenso-logo.png", "alt": "Logo Solenso" }, "body": "Solenso conçoit des solutions solaires (panneaux photovoltaïques et micro-onduleurs) pensées pour simplifier l'installation et optimiser la production. Brothers Négoce propose cette gamme aux installateurs qui développent une activité solaire.", "url": "https://www.solenso.fr/", "cta": { "label": "Visiter le site officiel Solenso" } }
+      ]
+    },
+    "marques_cta-final": {
+      "page": "marques",
+      "tag": "Une question sur nos marques ?",
+      "heading": "Besoin de conseils sur le bon produit ?",
+      "body": "Notre équipe vous aide à choisir la marque et la référence adaptées à votre chantier.",
+      "cta": { "label": "Nous contacter", "href": "mailto:commandes@brothersnegoce.com?subject=Question%20sur%20vos%20marques" }
+    },
+    "service_hero": {
+      "page": "service",
+      "heading": "Une expertise professionnelle complète, adaptée à vos chantiers",
+      "body": "De la demande de devis au suivi après livraison, Brothers Négoce accompagne les installateurs avec des produits fiables, une documentation technique complète et un service réactif sur chaque univers : PAC, CVC, isolation et accessoires.",
+      "cta": { "label": "Demander un accès pro", "href": "mailto:commandes@brothersnegoce.com" }
+    },
+    "service_list": {
+      "page": "service",
+      "tag": "Nos services",
+      "heading": "Ce que nous proposons à chaque professionnel",
+      "items": [
+        { "title": "Pompes à chaleur air/eau", "body": "Une gamme complète de PAC air/eau pour la rénovation et le neuf, sélectionnée pour sa fiabilité et accompagnée d'une documentation technique exploitable sur chantier.", "tags": ["PAC haute performance", "Stock disponible", "Fiches techniques", "Certifications"], "image": { "src": "assets/img/gen_service-thumbnail-image.jpg", "alt": "Pompe à chaleur air/eau pour installation professionnelle" }, "cta": { "label": "Voir les détails", "href": "service.html" } },
+        { "title": "Pompes à chaleur air/air", "body": "Des solutions air/air performantes pour le confort été comme hiver, avec un accompagnement commercial pour dimensionner chaque projet rapidement.", "tags": ["Multi-split", "Unités murales et gainables", "Accessoires de pose", "Aides et primes énergétiques"], "image": { "src": "assets/img/gen_service-thumbnail-image-2.jpg", "alt": "Pompe à chaleur air/air pour confort professionnel" }, "cta": { "label": "Voir les détails", "href": "service.html" } },
+        { "title": "Ballons thermodynamiques", "body": "Une sélection de ballons thermodynamiques pour la production d'eau chaude sanitaire, compatible avec les exigences de la rénovation énergétique.", "tags": ["Ballons monobloc et split", "Capacités 200 à 300L", "Pièces détachées", "Garantie constructeur"], "image": { "src": "assets/img/gen_service-thumbnail-image-3.jpg", "alt": "Ballon thermodynamique professionnel pour eau chaude sanitaire" }, "cta": { "label": "Voir les détails", "href": "service.html" } },
+        { "title": "CVC, isolation et accessoires techniques", "body": "Réseaux hydrauliques, isolants et accessoires de pose pour compléter chaque installation, avec une documentation technique claire pour vos équipes.", "tags": ["Réseaux hydrauliques", "Isolation technique", "Mise en service", "Accompagnement SAV"], "image": { "src": "assets/img/gen_service-thumbnail-image-4.jpg", "alt": "Matériel CVC et accessoires techniques pour installateurs" }, "cta": { "label": "Voir les détails", "href": "service.html" } }
+      ]
+    },
+    "service_faq": {
+      "page": "service",
+      "tag": "FAQ",
+      "heading": "Questions fréquentes",
+      "body": "Les réponses aux questions les plus posées par nos clients professionnels",
+      "sideCard": {
+        "title": "Une autre question ?",
+        "body": "Notre équipe commerciale est disponible pour vous accompagner.",
+        "cta": { "label": "Parler à un conseiller", "href": "mailto:commandes@brothersnegoce.com" }
+      },
+      "items": [
+        { "question": "Comment créer un compte revendeur ?", "answer": "Envoyez-nous votre demande par e-mail avec votre numéro SIRET et vos qualifications (RGE, QualiPAC, etc.). Votre accès professionnel est activé sous 24 à 48h ouvrées." },
+        { "question": "Quels sont les délais de livraison ?", "answer": "Les produits en stock sont expédiés sous 24 à 72h. Pour les commandes volumineuses ou les chantiers planifiés, contactez-nous pour organiser une livraison adaptée à votre calendrier." },
+        { "question": "Quelle documentation technique est disponible ?", "answer": "Fiches produit, notices d'installation, schémas hydrauliques et certifications sont fournis avec chaque référence pour faciliter la mise en œuvre sur chantier." },
+        { "question": "Quels produits propose Brothers Négoce ?", "answer": "Pompes à chaleur air/eau et air/air, ballons thermodynamiques, CVC, isolation et accessoires techniques, avec un accompagnement commercial et SAV sur l'ensemble de la gamme." },
+        { "question": "Livrez-vous partout en France ?", "answer": "Oui, nous livrons sur l'ensemble du territoire français. Notre entrepôt est basé au Bourget (93), au plus près des chantiers d'Île-de-France et du reste du pays." }
+      ]
+    },
+    "service_cta-final": {
+      "page": "service",
+      "tag": "Contactez-nous",
+      "heading": "Parlons matériel, nous sommes à un message près",
+      "body": "Recevez les tarifs professionnels et la disponibilité produit en un seul échange.",
+      "cta": { "label": "Recevoir les tarifs professionnels", "href": "mailto:commandes@brothersnegoce.com" }
+    },
+    "catalogue_hero": {
+      "page": "catalogue",
+      "badge": "Bientôt disponible",
+      "heading": "Le catalogue professionnel Brothers Négoce, bientôt en ligne",
+      "body": "PAC air/eau, PAC air/air, ballons thermodynamiques, CVC, isolation et accessoires : retrouvez très prochainement l'ensemble de notre offre professionnelle dans un catalogue digital pensé pour les installateurs, chauffagistes et entreprises RGE.",
+      "cta": { "label": "Demander le catalogue actuel par email", "href": "mailto:commandes@brothersnegoce.com?subject=Demande%20du%20catalogue%20produits" }
+    },
+    "catalogue_categories": {
+      "page": "catalogue",
+      "tag": "Notre offre",
+      "heading": "Cinq univers produits réunis dans un seul catalogue",
+      "items": [
+        { "title": "Pompes à chaleur air/eau", "body": "Gammes complètes pour le résidentiel et le tertiaire, sélectionnées pour leur fiabilité et leur disponibilité.", "badge": "En préparation" },
+        { "title": "Pompes à chaleur air/air", "body": "Solutions de climatisation réversible pour tous types de chantiers, mono et multi-split.", "badge": "En préparation" },
+        { "title": "Ballons thermodynamiques", "body": "Production d'eau chaude sanitaire performante, compatible avec vos installations PAC.", "badge": "En préparation" },
+        { "title": "CVC & isolation", "body": "Ventilation, chauffage, climatisation et solutions d'isolation pour vos chantiers de rénovation énergétique.", "badge": "En préparation" },
+        { "title": "Accessoires & documentation technique", "body": "Petit matériel, raccords, accessoires de pose et fiches techniques associées à chaque référence.", "badge": "En préparation" }
+      ]
+    },
+    "catalogue_cta-final": {
+      "page": "catalogue",
+      "tag": "En attendant la version digitale",
+      "heading": "Besoin du catalogue dès aujourd'hui ?",
+      "body": "Notre équipe vous envoie le catalogue produits actuel par email, avec les tarifs professionnels associés.",
+      "cta": { "label": "Demander le catalogue par email", "href": "mailto:commandes@brothersnegoce.com?subject=Demande%20du%20catalogue%20produits" }
+    },
+    "outils_hero": {
+      "page": "outils",
+      "badge": "En préparation",
+      "heading": "Des outils digitaux pensés pour les professionnels du terrain",
+      "body": "Brothers Négoce développe une suite d'outils digitaux pour faire gagner du temps aux installateurs, chauffagistes et entreprises RGE : recherche de code erreur, assistant SAV, fiches techniques, espace professionnel et demande de prix.",
+      "cta": { "label": "Être informé du lancement", "href": "mailto:commandes@brothersnegoce.com?subject=Etre%20informe%20du%20lancement%20des%20outils%20digitaux" }
+    },
+    "outils_list": {
+      "page": "outils",
+      "tag": "Nos outils",
+      "heading": "Cinq outils digitaux au service des installateurs",
+      "items": [
+        { "title": "Recherche de code erreur PAC", "body": "Saisissez le code erreur affiché sur votre pompe à chaleur pour obtenir un diagnostic rapide et la procédure à suivre.", "badge": "En préparation" },
+        { "title": "Assistant SAV", "body": "Un assistant en ligne pour orienter vos demandes de support technique et accélérer la résolution des pannes.", "badge": "En préparation" },
+        { "title": "Fiches techniques", "body": "Accédez aux notices et fiches techniques de chaque référence, classées par univers produit.", "badge": "En préparation" },
+        { "title": "Espace professionnel", "body": "Tarifs pro, suivi de commandes et catalogue personnalisé regroupés dans un espace dédié à votre entreprise.", "badge": "En préparation" },
+        { "title": "Demande de prix", "body": "Un formulaire simple pour obtenir rapidement un devis professionnel adapté à votre chantier.", "badge": "En préparation" }
+      ]
+    },
+    "outils_cta-final": {
+      "page": "outils",
+      "tag": "Soyez parmi les premiers informés",
+      "heading": "Envie d'être informé du lancement ?",
+      "body": "Contactez notre équipe pour être prévenu en priorité de la mise en ligne de ces outils digitaux.",
+      "cta": { "label": "Contacter l'équipe", "href": "mailto:commandes@brothersnegoce.com?subject=Etre%20informe%20du%20lancement%20des%20outils%20digitaux" }
+    },
+    "sav_hero": {
+      "page": "sav",
+      "badge": "En préparation",
+      "heading": "Un futur assistant SAV, et un support technique disponible dès aujourd'hui",
+      "body": "Diagnostic de panne, recherche de pièces détachées et mise en relation avec un technicien : notre futur assistant SAV en ligne est en préparation. En attendant, notre équipe support reste joignable par téléphone et par email.",
+      "cta": { "label": "Appeler le 01 89 21 08 48", "href": "tel:+33189210848" }
+    },
+    "sav_features": {
+      "page": "sav",
+      "tag": "Support technique",
+      "heading": "Ce que fera l'assistant SAV en ligne",
+      "items": [
+        { "title": "Diagnostic de panne", "body": "Renseignez le code erreur ou le symptôme constaté pour obtenir une première orientation de diagnostic.", "badge": "En préparation" },
+        { "title": "Recherche de pièces détachées", "body": "Retrouvez rapidement la référence de la pièce détachée correspondant à votre équipement.", "badge": "En préparation" },
+        { "title": "Contact technique direct", "body": "Mise en relation rapide avec un technicien Brothers Négoce pour les cas les plus complexes.", "badge": "En préparation" }
+      ]
+    },
+    "sav_cta-final": {
+      "page": "sav",
+      "tag": "En attendant l'assistant SAV en ligne",
+      "heading": "Un problème technique dès maintenant ?",
+      "body": "BAT. F3 – 51, rue du Commandant Rolland, 93350 Le Bourget. Notre équipe support répond par téléphone au 01 89 21 08 48 ou par email à commandes@brothersnegoce.com.",
+      "cta": { "label": "Contacter le support SAV", "href": "mailto:commandes@brothersnegoce.com?subject=Demande%20de%20support%20technique%20SAV" }
+    },
+    "documentation_hero": {
+      "page": "documentation",
+      "badge": "Bientôt disponible",
+      "heading": "La documentation technique Brothers Négoce, classée par univers produit",
+      "body": "Fiches techniques, notices et schémas de raccordement pour PAC air/eau, PAC air/air, ballons thermodynamiques, CVC et isolation : un espace de documentation dédié aux professionnels est en préparation.",
+      "cta": { "label": "Demander une fiche technique par email", "href": "mailto:commandes@brothersnegoce.com?subject=Demande%20de%20fiche%20technique" }
+    },
+    "documentation_categories": {
+      "page": "documentation",
+      "tag": "Documentation",
+      "heading": "Cinq univers techniques à venir",
+      "items": [
+        { "title": "Pompes à chaleur air/eau", "body": "Notices d'installation, schémas hydrauliques et fiches de mise en service.", "badge": "Bientôt disponible" },
+        { "title": "Pompes à chaleur air/air", "body": "Fiches techniques mono et multi-split, schémas frigorifiques et notices de pose.", "badge": "Bientôt disponible" },
+        { "title": "Ballons thermodynamiques", "body": "Fiches de raccordement et préconisations de compatibilité avec vos installations PAC.", "badge": "Bientôt disponible" },
+        { "title": "CVC", "body": "Notices techniques ventilation, chauffage et climatisation pour vos chantiers professionnels.", "badge": "Bientôt disponible" },
+        { "title": "Isolation", "body": "Fiches produits et préconisations de pose pour vos travaux de rénovation énergétique.", "badge": "Bientôt disponible" }
+      ]
+    },
+    "documentation_cta-final": {
+      "page": "documentation",
+      "tag": "En attendant l'espace documentation",
+      "heading": "Besoin d'une fiche technique précise ?",
+      "body": "Indiquez-nous la référence ou le produit concerné, notre équipe vous envoie la fiche technique correspondante par email.",
+      "cta": { "label": "Demander une fiche technique", "href": "mailto:commandes@brothersnegoce.com?subject=Demande%20de%20fiche%20technique" }
+    },
+    "espace-pro_hero": {
+      "page": "espace-pro",
+      "badge": "Bientôt disponible",
+      "heading": "Votre espace professionnel Brothers Négoce arrive bientôt",
+      "body": "Accès aux tarifs pro, suivi de commandes, catalogue personnalisé et historique d'achats : un espace dédié aux installateurs, chauffagistes et entreprises RGE est en préparation.",
+      "cta": { "label": "Demander un accès pro", "href": "mailto:commandes@brothersnegoce.com?subject=Demande%20d%27acc%C3%A8s%20professionnel" }
+    },
+    "espace-pro_benefits": {
+      "page": "espace-pro",
+      "tag": "Espace Pro",
+      "heading": "Tout ce que l'espace pro vous apportera",
+      "items": [
+        { "title": "Tarifs professionnels", "body": "Accédez à vos conditions tarifaires négociées, sans avoir à les redemander à chaque commande.", "badge": "Bientôt disponible" },
+        { "title": "Suivi de commandes", "body": "Visualisez en temps réel l'état de vos commandes en cours, de la validation à la livraison.", "badge": "Bientôt disponible" },
+        { "title": "Catalogue personnalisé", "body": "Un catalogue adapté à votre activité, avec vos références favorites mises en avant.", "badge": "Bientôt disponible" },
+        { "title": "Historique d'achats", "body": "Retrouvez l'ensemble de vos commandes passées et recommandez en quelques clics.", "badge": "Bientôt disponible" }
+      ]
+    },
+    "espace-pro_cta-final": {
+      "page": "espace-pro",
+      "tag": "Réservé aux professionnels",
+      "heading": "Demandez votre accès professionnel",
+      "body": "Installateurs, chauffagistes, plombiers, électriciens et entreprises RGE : faites-en la demande dès maintenant, notre équipe vous recontacte rapidement.",
+      "cta": { "label": "Demander un accès pro", "href": "mailto:commandes@brothersnegoce.com?subject=Demande%20d%27acc%C3%A8s%20professionnel" }
+    },
+    "blog_hero": {
+      "page": "blog",
+      "heading": "Actualités & ressources pour les pros du CVC",
+      "body": "Conseils, nouveautés produits et informations utiles pour les professionnels du bâtiment"
+    },
+    "blog_featured": {
+      "page": "blog",
+      "tag": "PAC",
+      "meta": "Guide technique · 12 juin 2026",
+      "heading": "Comment choisir une pompe à chaleur adaptée à un projet ?",
+      "body": "Puissance, type d'émetteurs, configuration du logement : les critères à vérifier avant de recommander une PAC à un client, pour éviter le sous-dimensionnement et les retours SAV.",
+      "image": { "src": "assets/img/gen_blog-image-4.jpg", "alt": "Technicien installant une pompe à chaleur air/eau chez un client" },
+      "cta": { "label": "Lire l'article", "href": "blog.html" }
+    },
+    "blog_list": {
+      "page": "blog",
+      "tag": "Actualités",
+      "heading": "Conseils et ressources pour les professionnels du bâtiment",
+      "cta": { "label": "Demander le catalogue", "href": "mailto:commandes@brothersnegoce.com" },
+      "items": [
+        { "title": "Pourquoi un catalogue clair fait gagner du temps aux installateurs ?", "image": { "src": "assets/img/gen_blog-image-6.jpg" }, "href": "blog.html" },
+        { "title": "PAC air/eau : points à vérifier avant commande", "image": { "src": "assets/img/gen_blog-image-5.jpg" }, "href": "blog.html" },
+        { "title": "Ballon thermodynamique : les critères importants", "image": { "src": "assets/img/gen_blog-image-4.jpg" }, "href": "blog.html" },
+        { "title": "Le rôle du négoce dans la rénovation énergétique", "image": { "src": "assets/img/gen_blog-image-3.jpg" }, "href": "blog.html" },
+        { "title": "Documentation technique : pourquoi elle doit être accessible rapidement", "image": { "src": "assets/img/gen_blog-image-2.jpg" }, "href": "blog.html" },
+        { "title": "Comment choisir une pompe à chaleur adaptée à un projet ?", "image": { "src": "assets/img/gen_blog-image-1.jpg" }, "href": "blog.html" }
+      ]
+    },
+    "blog_faq": {
+      "page": "blog",
+      "tag": "FAQ",
+      "heading": "Questions fréquentes",
+      "body": "Les réponses aux questions les plus posées par nos clients professionnels sur nos produits et nos services.",
+      "sideCard": {
+        "title": "Vous avez une autre question ?",
+        "body": "Notre équipe est disponible pour vous accompagner sur vos commandes et vos besoins techniques.",
+        "cta": { "label": "Contacter l'équipe", "href": "mailto:commandes@brothersnegoce.com" }
+      },
+      "items": [
+        { "question": "Comment demander un accès professionnel ?", "answer": "Contactez notre équipe par e-mail ou téléphone avec votre numéro SIRET et vos justificatifs professionnels. Un accès pro est généralement validé en moins de 48h." },
+        { "question": "Puis-je demander une information technique rapidement ?", "answer": "Oui, nos équipes vous transmettent fiches techniques, notices et schémas de raccordement rapidement par e-mail dès la demande." },
+        { "question": "Quels sont les délais de livraison ?", "answer": "Les délais varient selon les produits et la disponibilité en stock ; ils vous sont communiqués lors de la confirmation de commande." },
+        { "question": "Quels produits propose Brothers Négoce ?", "answer": "Notre catalogue couvre les pompes à chaleur air/eau et air/air, ballons thermodynamiques, équipements CVC, isolation et accessoires pour les professionnels du bâtiment." },
+        { "question": "Proposez-vous des conditions tarifaires pour les professionnels RGE ?", "answer": "Oui, des tarifs négoce dédiés aux installateurs RGE et entreprises du bâtiment sont disponibles sur demande, selon les volumes commandés." }
+      ]
+    },
+    "blog_cta-final": {
+      "page": "blog",
+      "tag": "Contact",
+      "heading": "Un projet en cours ? Parlons équipements",
+      "body": "Demandez votre accès pro pour consulter le catalogue complet et obtenir nos conditions négoce.",
+      "cta": { "label": "Demander un accès pro", "href": "mailto:commandes@brothersnegoce.com" }
     }
   },
 
@@ -182,21 +532,94 @@
   ],
 
   "marques": [
-    { "slug": "lg", "name": "LG", "url": "https://www.lg.com/fr/", "categories": ["pompes-a-chaleur"] },
-    { "slug": "ariston", "name": "Ariston", "url": "https://www.ariston.com/fr-fr/", "categories": ["eau-chaude-sanitaire"] },
-    { "slug": "intuis", "name": "Intuis", "url": "https://intuis.fr/", "categories": ["chauffage"] },
-    { "slug": "airwell", "name": "Airwell", "url": "https://www.airwell.com/fr/", "categories": ["chauffage"] },
-    { "slug": "hirsch", "name": "Hirsch", "url": "", "categories": ["isolation"] },
-    { "slug": "solenso", "name": "Solenso", "url": "https://www.solenso.fr", "categories": ["solaire"] }
+    { "slug": "lg", "name": "LG Electronics France", "url": "https://www.lg.com/fr/", "categories": ["pompes-a-chaleur"], "logo": "assets/img/brands/lg-logo.svg", "description": "LG est un constructeur coréen présent dans le chauffage et la climatisation, reconnu pour ses gammes de pompes à chaleur air/air (climatisation réversible mono et multi-split) et air/eau (gamme Therma V). Brothers Négoce distribue les produits LG auprès des installateurs professionnels." },
+    { "slug": "ariston", "name": "Ariston", "url": "https://www.ariston.com/fr-fr/", "categories": ["eau-chaude-sanitaire"], "logo": "assets/img/brands/ariston-logo.svg", "description": "Ariston est un acteur historique du chauffage et de l'eau chaude sanitaire, avec des solutions de ballons thermodynamiques, chaudières et pompes à chaleur. Ses produits sont sélectionnés par Brothers Négoce pour leur fiabilité sur les chantiers de rénovation énergétique." },
+    { "slug": "intuis", "name": "Intuis", "url": "https://intuis.fr/", "categories": ["chauffage"], "logo": "assets/img/brands/intuis-logo.png", "description": "Intuis (groupe Muller) conçoit des solutions de chauffage électrique et des pompes à chaleur destinées au marché résidentiel français. Brothers Négoce propose une partie de cette gamme à ses clients installateurs RGE." },
+    { "slug": "airwell", "name": "Airwell", "url": "https://www.airwell.com/fr/", "categories": ["chauffage"], "logo": "assets/img/brands/airwell-logo.png", "description": "Airwell est une marque française historique de climatisation et de pompes à chaleur air/air et air/eau, distribuée par Brothers Négoce pour les besoins en climatisation réversible et en chauffage des professionnels." },
+    { "slug": "hirsch", "name": "Hirsch Isolation", "url": "https://hirschisolation.fr/", "categories": ["isolation"], "logo": "assets/img/brands/hirsch-logo.png", "description": "Hirsch Isolation est un fabricant français spécialisé dans les solutions d'isolation thermique en polystyrène expansé (PSE), pour l'enveloppe du bâtiment (murs, sols, toitures). Brothers Négoce distribue ses gammes aux professionnels engagés dans des chantiers de performance thermique." },
+    { "slug": "solenso", "name": "Solenso", "url": "https://www.solenso.fr/", "categories": ["solaire"], "logo": "assets/img/brands/solenso-logo.png", "description": "Solenso conçoit des solutions solaires (panneaux photovoltaïques et micro-onduleurs) pensées pour simplifier l'installation et optimiser la production. Brothers Négoce propose cette gamme aux installateurs qui développent une activité solaire." }
   ],
 
-  "faq": [],
+  "faq": [
+    { "page": "index", "question": "Comment obtenir un accès professionnel ?", "answer": "Vous pouvez contacter notre équipe pour une demande de catalogue, un accès professionnel, une question produit ou une demande commerciale." },
+    { "page": "index", "question": "Quels sont vos délais de livraison ?", "answer": "Le stock disponible sur les références clés permet une expédition rapide. Les délais exacts sont confirmés à la commande selon le produit." },
+    { "page": "index", "question": "Comment obtenir le catalogue complet ?", "answer": "Contactez-nous par email ou téléphone pour recevoir notre catalogue détaillé, adapté à votre activité et à vos besoins." },
+    { "page": "index", "question": "Quels univers de produits proposez-vous ?", "answer": "Nous proposons des univers produits adaptés aux professionnels : PAC, CVC, isolation, ballons thermodynamiques, accessoires et documentation technique." },
+    { "page": "index", "question": "Comment fonctionne le SAV en cas de problème produit ?", "answer": "Notre équipe SAV traite chaque demande rapidement : contactez-nous avec votre référence de commande pour un suivi personnalisé." },
+    { "page": "service", "question": "Comment créer un compte revendeur ?", "answer": "Envoyez-nous votre demande par e-mail avec votre numéro SIRET et vos qualifications (RGE, QualiPAC, etc.). Votre accès professionnel est activé sous 24 à 48h ouvrées." },
+    { "page": "service", "question": "Quels sont les délais de livraison ?", "answer": "Les produits en stock sont expédiés sous 24 à 72h. Pour les commandes volumineuses ou les chantiers planifiés, contactez-nous pour organiser une livraison adaptée à votre calendrier." },
+    { "page": "service", "question": "Quelle documentation technique est disponible ?", "answer": "Fiches produit, notices d'installation, schémas hydrauliques et certifications sont fournis avec chaque référence pour faciliter la mise en œuvre sur chantier." },
+    { "page": "service", "question": "Quels produits propose Brothers Négoce ?", "answer": "Pompes à chaleur air/eau et air/air, ballons thermodynamiques, CVC, isolation et accessoires techniques, avec un accompagnement commercial et SAV sur l'ensemble de la gamme." },
+    { "page": "service", "question": "Livrez-vous partout en France ?", "answer": "Oui, nous livrons sur l'ensemble du territoire français. Notre entrepôt est basé au Bourget (93), au plus près des chantiers d'Île-de-France et du reste du pays." },
+    { "page": "blog", "question": "Comment demander un accès professionnel ?", "answer": "Contactez notre équipe par e-mail ou téléphone avec votre numéro SIRET et vos justificatifs professionnels. Un accès pro est généralement validé en moins de 48h." },
+    { "page": "blog", "question": "Puis-je demander une information technique rapidement ?", "answer": "Oui, nos équipes vous transmettent fiches techniques, notices et schémas de raccordement rapidement par e-mail dès la demande." },
+    { "page": "blog", "question": "Quels sont les délais de livraison ?", "answer": "Les délais varient selon les produits et la disponibilité en stock ; ils vous sont communiqués lors de la confirmation de commande." },
+    { "page": "blog", "question": "Quels produits propose Brothers Négoce ?", "answer": "Notre catalogue couvre les pompes à chaleur air/eau et air/air, ballons thermodynamiques, équipements CVC, isolation et accessoires pour les professionnels du bâtiment." },
+    { "page": "blog", "question": "Proposez-vous des conditions tarifaires pour les professionnels RGE ?", "answer": "Oui, des tarifs négoce dédiés aux installateurs RGE et entreprises du bâtiment sont disponibles sur demande, selon les volumes commandés." }
+  ],
 
-  "blog": [],
+  "blog": [
+    { "title": "Comment choisir une pompe à chaleur adaptée à un projet ?", "tag": "PAC", "meta": "Guide technique · 12 juin 2026", "excerpt": "Puissance, type d'émetteurs, configuration du logement : les critères à vérifier avant de recommander une PAC à un client, pour éviter le sous-dimensionnement et les retours SAV.", "image": "assets/img/gen_blog-image-4.jpg", "href": "blog.html", "featured": true },
+    { "title": "Pourquoi un catalogue clair fait gagner du temps aux installateurs ?", "image": "assets/img/gen_blog-image-6.jpg", "href": "blog.html", "featured": false },
+    { "title": "PAC air/eau : points à vérifier avant commande", "image": "assets/img/gen_blog-image-5.jpg", "href": "blog.html", "featured": false },
+    { "title": "Ballon thermodynamique : les critères importants", "image": "assets/img/gen_blog-image-4.jpg", "href": "blog.html", "featured": false },
+    { "title": "Le rôle du négoce dans la rénovation énergétique", "image": "assets/img/gen_blog-image-3.jpg", "href": "blog.html", "featured": false },
+    { "title": "Documentation technique : pourquoi elle doit être accessible rapidement", "image": "assets/img/gen_blog-image-2.jpg", "href": "blog.html", "featured": false }
+  ],
 
   "documents": [],
 
   "codesErreurs": [],
 
-  "demandesContact": []
+  "demandesContact": [],
+
+  "footer": {
+    "logo": { "src": "assets/img/brothers-negoce-logo-white.png", "alt": "Brothers Négoce logo" },
+    "contact": {
+      "phone": { "label": "01 89 21 08 48", "href": "tel:+33189210848" },
+      "email": { "label": "commandes@brothersnegoce.com", "href": "mailto:commandes@brothersnegoce.com" },
+      "address": "BAT. F3 – 51, rue du Commandant Rolland, 93350 Le Bourget"
+    },
+    "intro": "Une équipe réactive, des produits professionnels et des outils digitaux pensés pour simplifier le quotidien des installateurs.",
+    "cta": { "label": "Demander un accès pro", "href": "mailto:commandes@brothersnegoce.com" },
+    "social": [
+      { "platform": "Facebook", "href": "#" },
+      { "platform": "Tweeter", "href": "#" },
+      { "platform": "LinkedIn", "href": "#" },
+      { "platform": "Instagram", "href": "#" }
+    ],
+    "columns": [
+      {
+        "heading": "Navigation",
+        "links": [
+          { "label": "Accueil", "href": "index.html" },
+          { "label": "À propos", "href": "about.html" },
+          { "label": "Services", "href": "service.html" },
+          { "label": "Nos marques", "href": "marques.html" },
+          { "label": "Actualités", "href": "blog.html" }
+        ]
+      },
+      {
+        "heading": "Espace digital",
+        "links": [
+          { "label": "Catalogue", "href": "catalogue.html" },
+          { "label": "Outils", "href": "outils.html" },
+          { "label": "SAV", "href": "sav.html" },
+          { "label": "Documentation", "href": "documentation.html" },
+          { "label": "Espace Pro", "href": "espace-pro.html" }
+        ]
+      },
+      {
+        "heading": "Legal",
+        "links": [
+          { "label": "Terms & Conditions", "href": "terms.html" },
+          { "label": "Cookies", "href": "cookies.html" },
+          { "label": "Licenses", "href": "licenses.html" },
+          { "label": "404", "href": "404.html" }
+        ]
+      }
+    ],
+    "copyright": "© 2026 Brothers Négoce. Créé par NOYA 360 (https://noya360.fr/).",
+    "privacyLink": { "label": "Politique de confidentialité", "href": "privacy.html" }
+  }
 }
