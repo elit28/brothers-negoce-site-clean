@@ -9183,3 +9183,93 @@ footer{border-top:3px solid var(--primitive-color--primary-500,#24a3b1);}
 .section_cta.is-shop {
   background-image: linear-gradient(115deg, var(--primitive-color--primary-700, #0f6e78), var(--primitive-color--primary-500, #24a3b1)) !important;
 }
+
+/* ===== Value-add cards (home "Ce que Brothers Négoce apporte à vos chantiers") ===== */
+.value-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+@media (max-width: 991px) {
+  .value-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 567px) {
+  .value-grid { grid-template-columns: 1fr; }
+}
+.value-card {
+  background-color: var(--primitive-color--neutral-0, #fff);
+  border: 1px solid var(--primitive-color--neutral-200, #e5e5e5);
+  border-radius: var(--_size-variables---border-radius--4xl, 16px);
+  padding: 32px 28px;
+  box-shadow: 0 4px 16px var(--color-shadow--neutral-12, #c8c8c81f);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.value-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 28px var(--color-shadow--neutral-12, #c8c8c81f);
+}
+.value-card_icon {
+  width: 48px;
+  height: 48px;
+  min-width: 48px;
+  border-radius: 50%;
+  background-color: var(--primitive-color--primary-700, #0f6e78);
+  color: var(--primitive-color--neutral-0, #fff);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px;
+  margin-bottom: 20px;
+}
+.value-card_title {
+  font-size: 1.125em;
+  font-weight: 600;
+  color: #111;
+  margin: 0 0 10px;
+}
+.value-card_body {
+  color: #5a5a5a;
+  margin: 0;
+  line-height: 1.5;
+}
+
+/* ===== Process steps (home "Un accompagnement à chaque étape du projet") ===== */
+.process-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+}
+@media (max-width: 991px) {
+  .process-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 567px) {
+  .process-grid { grid-template-columns: 1fr; }
+}
+.process-step {
+  position: relative;
+  background-color: var(--primitive-color--neutral-0, #fff);
+  border: 1px solid var(--primitive-color--neutral-200, #e5e5e5);
+  border-top: 3px solid var(--primitive-color--primary-700, #0f6e78);
+  border-radius: var(--_size-variables---border-radius--2xl, 12px);
+  padding: 28px 24px;
+}
+.process-step_number {
+  font-size: 2em;
+  font-weight: 700;
+  color: var(--primitive-color--primary-700, #0f6e78);
+  opacity: 0.35;
+  margin-bottom: 12px;
+  line-height: 1;
+}
+.process-step_title {
+  font-size: 1em;
+  font-weight: 600;
+  color: #111;
+  margin: 0 0 8px;
+}
+.process-step_body {
+  color: #5a5a5a;
+  font-size: 0.9em;
+  margin: 0;
+  line-height: 1.5;
+}
