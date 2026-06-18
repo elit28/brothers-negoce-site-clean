@@ -1,0 +1,202 @@
+{
+  "_meta": {
+    "description": "Fichier de contenu temporaire et statique pour le site Brothers Négoce. Sert de pont avant la migration vers Directus + PostgreSQL : la structure ci-dessous reflète les futures collections Directus (voir content/directus-schema.md). Le site reste 100% statique tant que ce fichier n'est pas consommé par du code — aujourd'hui il documente/centralise le contenu, il n'est pas encore branché aux pages HTML.",
+    "version": "1.0.0",
+    "lastUpdated": "2026-06-18"
+  },
+
+  "pages": [
+    {
+      "slug": "index",
+      "title": "Accueil",
+      "path": "index.html",
+      "sections": ["home_hero", "home_value-add", "home_services", "home_process", "home_brands-mini", "home_shop-cta", "home_testimonials", "home_blog", "home_faq", "home_cta-final"]
+    },
+    {
+      "slug": "about",
+      "title": "À propos",
+      "path": "about.html",
+      "sections": ["about_hero", "about_story", "about_timeline", "about_partners", "about_success", "about_team", "about_cta-final"]
+    },
+    {
+      "slug": "marques",
+      "title": "Nos marques",
+      "path": "marques.html",
+      "sections": ["marques_hero", "marques_submenu", "marques_list"]
+    },
+    {
+      "slug": "service",
+      "title": "Nos services",
+      "path": "service.html",
+      "sections": []
+    },
+    {
+      "slug": "catalogue",
+      "title": "Catalogue",
+      "path": "catalogue.html",
+      "sections": []
+    },
+    {
+      "slug": "outils",
+      "title": "Outils",
+      "path": "outils.html",
+      "sections": []
+    },
+    {
+      "slug": "sav",
+      "title": "SAV",
+      "path": "sav.html",
+      "sections": []
+    },
+    {
+      "slug": "documentation",
+      "title": "Documentation",
+      "path": "documentation.html",
+      "sections": []
+    },
+    {
+      "slug": "espace-pro",
+      "title": "Espace Pro",
+      "path": "espace-pro.html",
+      "sections": []
+    },
+    {
+      "slug": "blog",
+      "title": "Blog",
+      "path": "blog.html",
+      "sections": []
+    },
+    {
+      "slug": "privacy",
+      "title": "Politique de confidentialité",
+      "path": "privacy.html",
+      "sections": []
+    },
+    {
+      "slug": "cookies",
+      "title": "Cookies",
+      "path": "cookies.html",
+      "sections": []
+    },
+    {
+      "slug": "terms",
+      "title": "Conditions générales",
+      "path": "terms.html",
+      "sections": []
+    }
+  ],
+
+  "sections": {
+    "home_hero": {
+      "page": "index",
+      "heading": "Votre partenaire terrain en rénovation énergétique",
+      "body": "Brothers Négoce est une entreprise B2B spécialisée dans la distribution de matériel pour les chantiers de rénovation énergétique. Nous accompagnons les professionnels de l'énergie et du bâtiment avec des solutions prêtes pour le chantier : produits, marques, disponibilité, logistique et suivi projet. Pompes à chaleur, chauffage, solaire, isolation, eau chaude sanitaire ou ventilation : nous connectons chaque besoin terrain à la solution adaptée.",
+      "cta": { "label": "Parler à un conseiller", "href": "#contact" }
+    },
+    "home_value-add": {
+      "page": "index",
+      "heading": "Notre valeur ajoutée",
+      "items": [
+        { "title": "Produits prêts chantier", "body": "Des solutions fiables pour le chauffage, le solaire, l'isolation, l'ECS et la ventilation." },
+        { "title": "Marques partenaires", "body": "Un réseau de fabricants reconnus pour proposer des références solides et cohérentes." },
+        { "title": "Disponibilité & logistique", "body": "Stock, délais, transport et livraison : nous aidons à limiter les blocages terrain." },
+        { "title": "Conseil & suivi projet", "body": "Un accompagnement clair avant, pendant et après le projet, jusqu'au SAV." }
+      ]
+    },
+    "home_process": {
+      "page": "index",
+      "heading": "Un accompagnement à chaque étape du projet",
+      "body": "De l'étude des aides jusqu'au suivi après livraison, Brothers Négoce accompagne les professionnels avec une approche claire, concrète et orientée terrain.",
+      "steps": [
+        { "number": "01", "title": "Aides & dispositifs", "body": "Orientation sur les aides disponibles : CEE, MaPrimeRénov' et dispositifs liés à la rénovation énergétique." },
+        { "number": "02", "title": "Dossier & valorisation", "body": "Aide à la préparation, au suivi et à la valorisation des dossiers pour sécuriser chaque projet." },
+        { "number": "03", "title": "Conception & choix produit", "body": "Sélection des bonnes solutions selon les besoins chantier, avec l'appui de marques partenaires." },
+        { "number": "04", "title": "Stock, garantie & transport", "body": "Conseil sur les disponibilités, les garanties, les délais et l'organisation du transport." },
+        { "number": "05", "title": "Suivi & SAV", "body": "Un interlocuteur pour accompagner les questions techniques et les besoins après livraison." }
+      ],
+      "cta": { "label": "Parler à un conseiller", "href": "#contact" }
+    },
+    "home_brands-mini": {
+      "page": "index",
+      "heading": "Des marques solides pour répondre aux besoins terrain",
+      "body": "Brothers Négoce s'appuie sur un réseau de fabricants reconnus pour proposer des solutions fiables en chauffage, solaire, isolation, ventilation et eau chaude sanitaire.",
+      "items": [
+        { "name": "LG", "category": "Pompes à chaleur", "tagline": "Technologie & performance", "body": "Solutions chauffage et climatisation pour accompagner les projets résidentiels et tertiaires.", "href": "marques.html#lg" },
+        { "name": "Ariston", "category": "Eau chaude sanitaire", "tagline": "Confort & efficacité", "body": "Solutions pour l'eau chaude, les ballons thermodynamiques et les équipements performants.", "href": "marques.html#ariston" },
+        { "name": "Intuis", "category": "Chauffage", "tagline": "Proximité marché français", "body": "Des solutions thermiques pensées pour les besoins des installateurs et des chantiers en France.", "href": "marques.html#intuis" },
+        { "name": "Airwell", "category": "Chauffage & climatisation", "tagline": "Solutions thermiques", "body": "Des produits pour répondre aux besoins de chauffage, rafraîchissement et confort intérieur.", "href": "marques.html#airwell" },
+        { "name": "Hirsch", "category": "Isolation", "tagline": "Performance thermique", "body": "Des solutions d'isolation pour améliorer l'efficacité énergétique des bâtiments.", "href": "marques.html#hirsch" },
+        { "name": "Solenso", "category": "Solaire", "tagline": "Panneaux & micro-onduleurs", "body": "Des solutions solaires pensées pour simplifier l'installation et optimiser la production.", "href": "marques.html#solenso" }
+      ]
+    },
+    "home_shop-cta": {
+      "page": "index",
+      "label": "Boutique professionnelle",
+      "heading": "Accédez aux produits disponibles pour vos chantiers",
+      "body": "Retrouvez nos références prêtes à commander : accessoires PAC, équipements antigel, pompes à chaleur, solutions chauffage et matériel pour vos projets de rénovation énergétique.",
+      "primaryCta": { "label": "Accéder à la boutique", "href": "https://www.brothersnegoce.com/shop", "external": true },
+      "secondaryCta": { "label": "Demander un conseil", "href": "#contact" },
+      "caption": "Produits chantier — Stock, références PAC, accessoires et solutions pros."
+    },
+    "about_story": {
+      "page": "about",
+      "tag": "Notre histoire",
+      "heading": "Une société pensée par des pros, pour des pros",
+      "body": "Au départ, il y avait deux frères, deux entrepreneurs issus du terrain... (voir about.html pour le texte complet)",
+      "quote": {
+        "text": "Les professionnels du bâtiment méritent bien plus qu'un simple fournisseur : un partenaire de confiance, réactif, engagé et capable de comprendre leurs enjeux quotidiens.",
+        "attribution": "L'idée fondatrice · 2015"
+      }
+    },
+    "about_timeline": {
+      "page": "about",
+      "heading": "La timeline stratégique de Brothers Négoce",
+      "stages": [
+        { "year": "2015", "date": "Novembre 2015", "title": "Création de Brothers Négoce", "body": "Lancement de l'activité de négoce de matériel bâtiment." },
+        { "year": "2020", "date": "Avril 2020", "title": "Partenariats fabricants & structuration énergétique", "body": "Signature des premiers accords commerciaux avec LG, Hirsch, Solenso." },
+        { "year": "2024", "date": "Avril 2024", "title": "Expansion logistique & ouverture du dépôt du Bourget", "body": "Ouverture du grand dépôt logistique et augmentation des capacités nationales." },
+        { "year": "2025", "date": "Septembre 2025", "title": "Positionnement « Partenaire valorisation projet »", "body": "Brothers Négoce devient un acteur engagé dans la valorisation énergétique des projets." },
+        { "year": "today", "date": "Aujourd'hui", "title": "Bien plus qu'un distributeur", "body": "Vision inchangée : produits de qualité, bon prix, livraison dans les temps, conseil technique précis." }
+      ]
+    },
+    "about_partners": {
+      "page": "about",
+      "heading": "Des partenaires qui ont façonné notre histoire",
+      "items": [
+        { "name": "Groupe Planète Service", "role": "Partenaire fondateur", "body": "Premier client devenu notre premier partenaire stratégique." },
+        { "name": "EBS Énergie", "role": "Partenaire CEE", "body": "Partenaire dans le cadre des Certificats d'Économies d'Énergie." }
+      ]
+    }
+  },
+
+  "produits": [],
+
+  "categories": [
+    { "slug": "pompes-a-chaleur", "name": "Pompes à chaleur" },
+    { "slug": "chauffage", "name": "Chauffage" },
+    { "slug": "eau-chaude-sanitaire", "name": "Eau chaude sanitaire" },
+    { "slug": "isolation", "name": "Isolation" },
+    { "slug": "solaire", "name": "Solaire" },
+    { "slug": "ventilation", "name": "Ventilation" },
+    { "slug": "accessoires", "name": "Accessoires" }
+  ],
+
+  "marques": [
+    { "slug": "lg", "name": "LG", "url": "https://www.lg.com/fr/", "categories": ["pompes-a-chaleur"] },
+    { "slug": "ariston", "name": "Ariston", "url": "https://www.ariston.com/fr-fr/", "categories": ["eau-chaude-sanitaire"] },
+    { "slug": "intuis", "name": "Intuis", "url": "https://intuis.fr/", "categories": ["chauffage"] },
+    { "slug": "airwell", "name": "Airwell", "url": "https://www.airwell.com/fr/", "categories": ["chauffage"] },
+    { "slug": "hirsch", "name": "Hirsch", "url": "", "categories": ["isolation"] },
+    { "slug": "solenso", "name": "Solenso", "url": "https://www.solenso.fr", "categories": ["solaire"] }
+  ],
+
+  "faq": [],
+
+  "blog": [],
+
+  "documents": [],
+
+  "codesErreurs": [],
+
+  "demandesContact": []
+}
