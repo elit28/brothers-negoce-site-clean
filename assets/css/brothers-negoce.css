@@ -9111,6 +9111,12 @@ footer{border-top:3px solid var(--primitive-color--primary-500,#24a3b1);}
 .section_footer .social_icon{color:#cdd8da!important;}
 .section_footer .button_primary .button_text,.section_footer .button_text{color:var(--primitive-color--primary-900,#011f23)!important;}
 
+/* ===== Brand cards on dark showcase section (marques.html): status badge + card border
+   must use the same white-on-dark pattern as .section_tag, not the light-page teal tint ===== */
+.section_service.is-service-showcase .status-badge_wrap{background:var(--color-shadow--white-20,#fff3)!important;color:#ffffff!important;}
+.section_service.is-service-showcase .brand_card{border-color:var(--color-shadow--white-20,#fff3)!important;}
+.section_service.is-service-showcase .brand_card-name,.section_service.is-service-showcase .brand_card p{color:#ffffff!important;}
+
 /* ===== Testimonial card: greenery photo background + cyan overlay ===== */
 .testimonial-slider_card{
   background-image:linear-gradient(160deg, rgba(2,47,52,.86), rgba(28,150,165,.80)), url('../img/gen_testimonial-bg.jpg')!important;
