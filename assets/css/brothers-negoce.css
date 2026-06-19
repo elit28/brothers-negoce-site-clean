@@ -9117,6 +9117,36 @@ footer{border-top:3px solid var(--primitive-color--primary-500,#24a3b1);}
 .section_service.is-service-showcase .brand_card{border-color:var(--color-shadow--white-20,#fff3)!important;}
 .section_service.is-service-showcase .brand_card-name,.section_service.is-service-showcase .brand_card p{color:#ffffff!important;}
 
+/* ===== Brand detail pages ("Qui est <marque> ?" intro block) on the same dark showcase
+   section: heading/paragraph/tag text must be white, not the default dark-page gray ===== */
+.section_service.is-service-showcase h1,
+.section_service.is-service-showcase h2,
+.section_service.is-service-showcase h3,
+.section_service.is-service-showcase p,
+.section_service.is-service-showcase .section_tag{color:#ffffff!important;}
+.section_service.is-service-showcase .text-highlighted{color:#7fe3ef!important;}
+.section_service.is-service-showcase .service-hero_para{color:rgba(255,255,255,.85)!important;}
+
+/* ===== Logo: remove the leftover white card backdrop (made for the old dark-colored
+   logo); the current logo file is already a white/light mark, so a white box behind it
+   on a dark footer just hid it completely. Also enlarge logos everywhere per request. ===== */
+.footer_brand .brand_logo,
+.footer_brand img {
+  background: transparent;
+  padding: 0;
+  border-radius: 0;
+}
+.footer_brand {
+  max-width: 220px;
+}
+.navbar_logo {
+  max-width: 190px;
+}
+.brand-mini_logo {
+  height: 52px;
+  max-width: 180px;
+}
+
 /* ===== Testimonial card: greenery photo background + cyan overlay ===== */
 .testimonial-slider_card{
   background-image:linear-gradient(160deg, rgba(2,47,52,.86), rgba(28,150,165,.80)), url('../img/gen_testimonial-bg.jpg')!important;
@@ -9161,6 +9191,13 @@ footer{border-top:3px solid var(--primitive-color--primary-500,#24a3b1);}
   display: flex;
   flex-direction: column;
   gap: 8px;
+}
+.brand-mini_card-image {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 8px;
 }
 .brand-mini_name {
   margin: 0;
