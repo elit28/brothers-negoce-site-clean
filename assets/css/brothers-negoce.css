@@ -9198,6 +9198,18 @@ footer{border-top:3px solid var(--primitive-color--primary-500,#24a3b1);}
     grid-template-columns: 1fr;
   }
 }
+/* Brand pages with only 2 product categories: avoid an empty 3rd grid cell */
+.brand-mini_grid.is-gamme {
+  grid-template-columns: 1fr 1fr;
+  max-width: 760px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (max-width: 767px) {
+  .brand-mini_grid.is-gamme {
+    grid-template-columns: 1fr;
+  }
+}
 .brand-mini_card {
   background-color: var(--primitive-color--neutral-0, #fff);
   border: 1px solid var(--primitive-color--neutral-200, #e5e5e5);
