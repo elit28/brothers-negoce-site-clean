@@ -4823,6 +4823,15 @@ figure {
   grid-template-columns: 2fr 1fr;
 }
 
+/* ===== Blog article hero: tag + h1 + intro + meta stack vertically above the
+   feature image, instead of inheriting the 2-column grid (which left an
+   empty rounded cell next to the title since there is no second column item) ===== */
+.blog_header.is-article {
+  display: flex;
+  flex-direction: column;
+  gap: var(--_size-variables---element-spacing--md, 16px);
+}
+
 .blog-header_para {
   width: var(--_max-width---max-width--100);
   max-width: 424px;
