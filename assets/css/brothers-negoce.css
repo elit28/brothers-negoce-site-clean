@@ -9164,13 +9164,13 @@ footer{border-top:3px solid var(--primitive-color--primary-500,#24a3b1);}
 .testimonial-slider_card .testimonial-author_role,.testimonial-slider_card [class*="role"]{color:rgba(255,255,255,.82)!important;}
 .testimonial-slider_card .testimonial-author_image{border:3px solid rgba(255,255,255,.6);}
 
-/* ===== Team section: greenery professional background + cyan overlay ===== */
-.section_team{background-image:url('../img/gen_team-bg.jpg')!important;background-size:cover!important;background-position:center!important;background-attachment:fixed;}
-.section_team .home-team_header-title,.section_team .home-team_header-para{color:#ffffff!important;}
-.section_team .home-team_header-para{color:rgba(255,255,255,.85)!important;}
-.section_team .text-highlighted{color:#7fe3ef!important;}
-.section_team .section_tag{background:rgba(255,255,255,.16)!important;color:#ffffff!important;}
-.section_team .section_tag svg, .section_team .section_tag path{color:#ffffff!important;fill:#ffffff!important;}
+/* ===== Team/pôles section: plain light background matching Home's .section_process,
+   instead of a busy fixed photo fighting with the white value-cards on top of it ===== */
+.section_team{background-color:var(--primitive-color--neutral-300, #E7FDFC);}
+
+/* ===== about.html "Partenaires de confiance": only 2 real partners exist, so force
+   a 2-column grid instead of the default 3-column (which left a wide empty gap) ===== */
+.section_partners .success_list{grid-template-columns:1fr 1fr;max-width:760px;margin-left:auto;margin-right:auto;}
 
 /* team-header-readability */
 .section_team .home-team_header-title,.section_team .home-team_header-para{text-shadow:0 2px 14px rgba(0,0,0,.45);}
